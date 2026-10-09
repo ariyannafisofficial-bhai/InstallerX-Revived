@@ -1,0 +1,24 @@
+name: My Build
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+      - run: chmod +x ./gradlew
+      - run: ./gradlew assemblePreviewDebug --no-configuration-cache -PAPP_ID="com.rosan.installer.x.revived.test"
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: my-apk
+          path: app/build/outputs/apk/Preview/debug/*.apk
+          if-no-files-found: error
