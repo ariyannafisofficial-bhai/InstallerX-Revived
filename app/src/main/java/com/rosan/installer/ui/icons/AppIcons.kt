@@ -2,6 +2,7 @@
 // Copyright (C) 2025-2026 InstallerX Revived contributors
 package com.rosan.installer.ui.icons
 
+import com.kx.icons.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.PlaylistAddCheck
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
@@ -105,18 +106,18 @@ object AppIcons {
     // You need to add the 'androidx.compose.material:material-icons-extended' dependency to use all icons
     // Or replace them with your own icon resources
     val Android = Icons.TwoTone.Android
-    val Check = Icons.Rounded.Check
+    val Check = KxIcons.Check
     val Active = Icons.Rounded.CheckCircleOutline
-    val Info = Icons.TwoTone.Info
+    val Info = KxIcons.Info
     val Add = Icons.TwoTone.Add
     val Edit = Icons.TwoTone.Edit
-    val Delete = Icons.TwoTone.Delete
+    val Delete = KxIcons.Uninstall
     val Retry = Icons.TwoTone.Refresh
     val Save = Icons.TwoTone.Save
     val Share = Icons.TwoTone.Share
     val BugReport = Icons.TwoTone.BugReport
     val Terminal = Icons.TwoTone.Terminal
-    val Launcher = Icons.TwoTone.RocketLaunch
+    val Launcher = KxIcons.Bird
     val RootMethod = Icons.TwoTone.Extension
     val FlashPreferRoot = Icons.TwoTone.Bolt
     val History = Icons.TwoTone.History
@@ -124,11 +125,11 @@ object AppIcons {
     val Lab = Icons.TwoTone.Science
     val Suggestion = Icons.TwoTone.AutoAwesome
     val Tip = Icons.Filled.Lightbulb
-    val Update = Icons.TwoTone.SystemUpdate
-    val Download = Icons.TwoTone.Download
+    val Update = KxIcons.Update
+    val Download = KxIcons.Install
     val Rule = Icons.AutoMirrored.TwoTone.Rule
     val Search = Icons.TwoTone.Search
-    val Close = Icons.TwoTone.Close
+    val Close = KxIcons.Close
     val AutoFixHigh = Icons.TwoTone.AutoFixHigh
     val Developer = Icons.TwoTone.DeveloperMode
     val Theme = Icons.TwoTone.ColorLens
@@ -147,7 +148,7 @@ object AppIcons {
     val Root = Icons.TwoTone.Tag
     val Shizuku = null // Shizuku icon
     val Dhizuku = null // Dhizuku icon
-    val Customize = Icons.TwoTone.Settings
+    val Customize = KxIcons.Settings
     // --- Authorizer icons end ---
 
     // --- Installation mode icons set ---
@@ -162,12 +163,12 @@ object AppIcons {
     // --- Installation mode icons end ---
 
     // --- Settings icons set ---
-    val Authorizer = Icons.TwoTone.Memory
+    val Authorizer = KxIcons.Key
     val SingleLineSettingIcon = Icons.TwoTone.Compress
     val MultiLineSettingIcon = Icons.TwoTone.Expand
     val Xposed = Icons.TwoTone.Extension
     val LSPosed = Icons.TwoTone.Healing
-    val DisableAdbVerify = Icons.TwoTone.Security
+    val DisableAdbVerify = KxIcons.ShieldKey
     val InstallMode = Icons.TwoTone.Downloading
     val BatteryOptimization = Icons.TwoTone.BatterySaver
     val LockDefault = Icons.TwoTone.Favorite
